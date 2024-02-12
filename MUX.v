@@ -3,5 +3,9 @@ module MUX(input a,
            input b,
            input slt,
            output y);
-    assign y = (slt)? b:a;
+    //assign y = (slt)? b:a;
+    always@(*)
+        begin
+            y = (slt)? b:a;
+        end
 endmodule 
