@@ -1,4 +1,4 @@
-//This is a simple Mux for git introduction
+//This is a simple Mux for git and github introduction
 module MUX(input a,
            input b,
            input slt,
