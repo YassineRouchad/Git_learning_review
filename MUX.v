@@ -6,6 +6,7 @@ module MUX(input a,
     //assign y = (slt)? b:a;
     always@(*)
         begin
-            y = (slt)? b:a;
+            if(slt) y = b;
+            else y = a;
         end
 endmodule 
